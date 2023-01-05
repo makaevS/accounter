@@ -1,0 +1,15 @@
+type Account {
+  name: String!
+  amount: Float!
+}
+
+type Operation {
+  name: String
+  amount: Float!
+  datetime: String!
+}
+
+type Query {
+  allAccounts: [Account!]
+  allOperations: [Operation!]
+}
